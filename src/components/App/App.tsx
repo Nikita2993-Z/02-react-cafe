@@ -1,4 +1,4 @@
-import CSS from './App.module.css'
+import css from './App.module.css'
 import 'modern-normalize/modern-normalize.css'
 import CafeInfo from '../CafeInfo/CafeInfo.tsx';
 import { useState } from 'react';
@@ -31,7 +31,7 @@ const resetVotes = () => {
 const totalVotes = votes.good + votes.neutral + votes.bad;
 const positiveRate = totalVotes ? Math.round((votes.good / totalVotes) * 100) : 0;
   return (
-    <div className={CSS.app}>
+    <div className={css.app}>
         <CafeInfo />
         <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={totalVotes > 0}/>
         {totalVotes > 0 ? (
