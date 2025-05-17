@@ -1,4 +1,5 @@
 import CSS from './App.module.css'
+import 'modern-normalize/modern-normalize.css'
 import CafeInfo from '../CafeInfo/CafeInfo.tsx';
 import { useState } from 'react';
 import VoteOptions from '../VoteOptions/VoteOptions.tsx';
