@@ -1,15 +1,12 @@
 import css from './VoteStats.module.css'
+import type { Votes } from '../../types/votes';
 
 interface VoteStatsProps {
-  votes: {
-    good: number;
-    neutral: number;
-    bad: number;
-  };
+  votes: Votes;
   totalVotes: number;
   positiveRate: number;
 }
-const VoteStats: React.FC<VoteStatsProps> = ({ votes, totalVotes, positiveRate }) => {
+const VoteStats = ({ votes, totalVotes, positiveRate }: VoteStatsProps) => {
   return (
     <div className={css.container}>
       <p className={css.stat}>
